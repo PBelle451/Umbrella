@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Umbrella Corporation offers the best pharmaceutical solutions tailored to your medical needs. Contact us to learn more about our services.">
     <title>Umbrella Corporation - Pharmaceutical Solutions</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS, Popper.js, e jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Bootstrap JS, Popper.js, e jQuery (defer para melhorar o carregamento) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container d-flex justify-content-between">
-            <!-- Logo -->
-            <a class="navbar-brand active" aria-current="page" href="#">
-                <img src="/images/Umbrella_Corporation_logo.svg.png" alt="Umbrella Corporation logo" style="height: 40px; width: auto;">
-            </a>
-    
-            <!-- Menu sempre visível em linha e alinhado à direita -->
-            <div class="d-flex">
-                <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/signup">Sign-Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
 
-    <div class="jumbotron jumbotron-fluid text-light py-5 d-flex align-items-center cc-home-banner" 
-         style="background: linear-gradient(180.43deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.80) 100%), 
-                url('/images/8ea9768d1b6a4f48b61917478a65a6d6e18c6f29r1-485-303v2_00.jpg'); 
-                background-size: cover; background-position: center;">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation">
+            <div class="container d-flex justify-content-between">
+                <!-- Logo -->
+                <a class="navbar-brand active" aria-current="page" href="#">
+                    <img src="/images/Umbrella_Corporation_logo.svg.png" alt="Umbrella Corporation logo" style="width: 50px; height: auto;"> 
+                </a>
+                <a class="navbar-brand active" aria-current="page">
+                    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger;" >UMBRELLA CORPORATION</h2>
+                    <p style="font-family: 'Courier New', Courier, monospace; font-size: Medium">"Our business, is life itself..." </p>
+                </a>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid text-light py-5 d-flex align-items-center cc-home-banner">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-9">
-                    <h1 class="display-3 cc-home-banner-title" style="color: white;">Pharmaceutical Solutions To Suit Your Needs</h1>
-                    <p class="lead" style="color: white;">Your health is our #1 priority</p>
+                    <h1 class="display-3 cc-home-banner-title">Pharmaceutical Solutions To Suit Your Needs</h1>
+                    <p class="lead">Your health is our #1 priority</p>
                     <p class="mt-3">
                         <a href="/contact" class="btn btn-light btn-lg">Contact Us</a>
                     </p>
@@ -72,7 +85,8 @@
                 <div class="card mb-3 text-center">
                     <a href="/services">
                         <picture>
-                            <img src="/images/pharmaceutical-stocks-us.jpg" alt="Pharmaceutical solutions" style="height: 200px; width: 400px;">
+                            <img src="/images/pharmaceutical-stocks-us.jpg" 
+                                 alt="Pharmaceutical solutions">
                         </picture>
                     </a>
                     <div class="card-body py-3 px-3">
@@ -90,7 +104,8 @@
                 <div class="card mb-3 text-center">
                     <a href="/contact">
                         <picture>
-                            <img src="/images/bopVbJaehDivVnKMvuxqaN.jpg" alt="Stocks" style="height: 200px; width: 400px;">
+                            <img src="/images/bopVbJaehDivVnKMvuxqaN.jpg" 
+                                 alt="Stocks">
                         </picture>
                     </a>
                     <div class="card-body py-3 px-3">
@@ -102,7 +117,6 @@
                             <a href="/contact" class="btn btn-link d-inline">Contact us</a>
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -118,7 +132,8 @@
             </div>
         </div>
     </main>
-    <footer class="bg-dark py-4 text-light text-md-left text-center cc-footer">
+    
+    <footer class="cc-footer py-4 text-light text-md-left text-center">
         <div class="container">
             <div class="row mx-lg-n3">
                 <div class="px-lg-3 col-lg-3 col-md-6 col-sm-12">
@@ -132,12 +147,11 @@
                         <p>
                             "Contact us anytime at"
                             <br>
-                            <a href="mailto:gay@gayassemail.com">gay@gayassemail.com</a>
+                            <a href="mailto:info@umbrella.com">info@umbrella.com</a>
                         </p>
                         <p>
-                            "* All images taken from inside my ass "
-                            <a href="https://insidemyasshole.com">insidemyasshole.com</a>
-                            <br>
+                            "Check out our website"
+                            <a href="https://umbrellacorp.com">umbrellacorp.com</a>
                         </p>
                     </div>
                 </div>    

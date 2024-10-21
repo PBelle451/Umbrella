@@ -1,0 +1,103 @@
+/* Font-family applied globally */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Paleta de Cores */
+:root {
+    --primary-color: crimson;
+    --secondary-color: #343a40;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Jumbotron */
+.cc-home-banner {
+    background: linear-gradient(180.43deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.80) 100%), 
+                url('/images/8ea9768d1b6a4f48b61917478a65a6d6e18c6f29r1-485-303v2_00.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+.cc-home-banner-title {
+    color: white;
+}
+
+.lead {
+    color: white;
+}
+
+/* Cards */
+.card img {
+    height: 200px;
+    width: 400px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.card .btn-link {
+    color: var(--primary-color);
+}
+
+/* Testimonial */
+.cc-testimonial-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cc-testimonial-attribution {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Footer */
+.cc-footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cc-footer-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cc-footer-link-lg {
+    color: #adb5bd;
+    transition: color 0.3s ease-in-out;
+}
+
+.cc-footer-link-lg:hover {
+    color: var(--primary-color);
+}
+
+.cc-footer-copy {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
